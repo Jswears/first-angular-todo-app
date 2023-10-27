@@ -1,0 +1,73 @@
+.todo {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.todo:nth-child(even) {
+  background-color: #eee;
+}
+
+.todo:last-of-type {
+  border-bottom: none;
+}
+
+.todo .id {
+  width: 50px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.todo .content {
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+.todo .content:hover {
+  color: #f00;
+  cursor: pointer;
+}
+
+.todo.done .content {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.todo-input {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.todo-submit {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: #333;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.todo .delete {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: #333;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.todo .delete:hover {
+  background-color: #f00;
+  color: #fff;
+}
